@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;0,700;0,800;0,900;1,400&display=swap");
+
+*{
+    margin: 0;
+
+    box-sizing: border-box;
+    font-family:  'Poppins', sans-serif;
+}
+body{
+    background-color: #081b29;
+}
+
+.menu{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px  10%;
+    background-color:transparent;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    font-size: 25px;
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 600;
+}
+
+.navbar a{
+    text-decoration: none;
+    font-size: 18px;
+    color: aliceblue;
+    font-weight: 500;
+    margin: 20px;
+    transition: 0.4s;
+}
+.navbar a:hover,
+.navbar a.active{
+    color:rgb(4, 146, 204) ;
+}
+
+.home{
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 0 10%;
+
+}
+
+.home-content{
+    max-width: 600px;
+}
+.home-content h1{
+    font-size: 56px;
+    font-weight: 700;
+}
+.home-content h3{
+    font-size: 32px;
+    font-weight: 700;
+    color:rgb(4, 146, 204) ;
+}
+.home-content p{
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+.home-content .btn-box{
+    width: 345px;
+    height: 50px;
+    
+}
+
+.btn-box a{
+    display: inline-flex ;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background-color:rgb(4, 146, 204) ;
+    border: 2px solid rgb(4, 146, 204) ;
+    border-radius: 8px;
+    font-size: 19px;
+    text-decoration: none;
+    font-weight: 700;
+    color:#081b29;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+
+    
+}
+.btn-box a:nth-child(1){
+    background: transparent;
+    color:rgb(4, 146, 204) ;
+    
+
+}
+.btn-box a:nth-child(1):hover{
+    color:#081b29;
+    
+}
+
+
+.btn-box a:nth-child(1)::before{
+    background:rgb(4, 146, 204) ; 
+
+}
+
+
+.btn-box a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color:rgb(4, 146, 204) ;
+    z-index: -1;
+    transition: .5s;
+}
+.btn-box a:hover::before{
+    width: 100%;
+}
