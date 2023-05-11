@@ -37,7 +37,15 @@ body{
 }
 .navbar a:hover,
 .navbar a.active{
-    color:rgb(4, 146, 204) ;
+    background:linear-gradient(45deg,rgb(4, 146, 204),#1607ec);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.logo:hover{
+    background:linear-gradient(45deg,rgb(4, 146, 204),#1607ec);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .home{
@@ -122,6 +130,58 @@ body{
     z-index: -1;
     transition: .5s;
 }
+
 .btn-box a:hover::before{
+    width: 100%;
+}
+
+.navbar-social{
+    position: absolute;
+    bottom: 40px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+
+.navbar-social a{
+    display: inline-flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    font-size: 20px;
+    border: 2px solid rgb(4, 146, 204) ;
+    color:rgb(4, 146, 204) ;
+    border-radius: 50%;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
+
+}
+
+.navbar-social a:hover{
+    color: #081b29;
+
+}
+
+.navbar-social a::before{
+    content:'';
+    position:absolute;
+    top:0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(4, 146, 204) ;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.navbar-social a:hover::before{
     width: 100%;
 }
