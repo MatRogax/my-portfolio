@@ -2,10 +2,10 @@
 
 *{
     margin: 0;
-
     box-sizing: border-box;
     font-family:  'Poppins', sans-serif;
 }
+
 body{
     background-color: #081b29;
 }
@@ -34,13 +34,15 @@ body{
     color: aliceblue;
     font-weight: 500;
     margin: 20px;
-    transition: 0.5s;
+    transition: 0.5s ease-in-out;
 }
+
 .navbar a:hover,
 .navbar a.active{
     background:linear-gradient(45deg,rgb(4, 146, 204),#1607ec);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
 }
 
 .logo:hover{
@@ -68,7 +70,7 @@ body{
 .home-content h3{
     font-size: 32px;
     font-weight: 700;
-    color:rgb(4, 146, 204) ;
+    color:rgb(4, 146, 204);
 }
 .home-content p{
     font-size: 16px;
@@ -104,7 +106,7 @@ body{
 }
 .btn-box a:nth-child(1){
     background: transparent;
-    color:rgb(4, 146, 204) ;
+    color:rgb(4, 146, 204);
     
 
 }
@@ -115,7 +117,7 @@ body{
 
 
 .btn-box a:nth-child(1)::before{
-    background:rgb(4, 146, 204) ; 
+    background:rgb(4, 146, 204); 
 
 }
 
@@ -188,17 +190,7 @@ body{
 }
 
 
-.navbar a::before{
-    content: "";
-    width: 0%;
-    top: 58%;
-    height: 2px;
-    background:linear-gradient(45deg,rgb(4, 146, 204),#1607ec);
-    position: absolute;
-    transition: 0.5s ease-in-out;
-}
 
-.navbar a:hover::before{
-    width: 100%;
-}
+
+
 
